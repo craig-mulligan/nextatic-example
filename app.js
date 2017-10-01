@@ -8,5 +8,6 @@ const nextatic = require('nextatic');
   }
   // launch server
   nextatic(conf)
-  nextatic.dev()
+  await nextatic.export()
+  process.exit(0)
 })()

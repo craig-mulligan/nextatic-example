@@ -15,7 +15,7 @@ const Post = ({ title, body, slug }) => {
 }
 
 Post.getInitialProps = async ({ asPath }) => {
-  const gql = require('nextatic/lib/client')
+  const gql = require('nextatic/dist/client')
   const { data } = await gql(`{
     post(slug: "${asPath.replace(/\/$/, '')}") {
       title

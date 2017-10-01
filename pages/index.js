@@ -24,7 +24,7 @@ const Page = ({ posts, ...props }) => {
 }
 
 Page.getInitialProps = async ({ pathname }) => {
-  const gql = require('nextatic/lib/client')
+  const gql = require('nextatic/dist/client')
   const { data } = await gql(`{
     posts {
       title
